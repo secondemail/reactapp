@@ -5,18 +5,18 @@ import Silder from './../../Components/Home/Silder';
 import DiscountSection from './../../Components/Home/DiscountSection';
 import BrandFeatured from '../../Components/Brand/BrandFeatured';
 import ViewHomeProductsHook from './../../hook/products/view-home-products-hook';
-import { Slide } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 const HomePage = () => {
     const [items] = ViewHomeProductsHook();
     return (
         <div className='font' >
             <Silder />
-            <Slide>
+            <Fade>
                 <HomeCategory />
                 <CardProductsContainer products={items} title="الاكثر مبيعا" btntitle="المزيد" pathText="/products" />
                 <DiscountSection />
                 <BrandFeatured title="اشهر الماركات" btntitle="المزيد" />
-            </Slide>
+            </Fade>
         </div>
     )
 }
