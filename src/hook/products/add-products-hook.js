@@ -175,7 +175,6 @@ const AdminAddProductsHook = () => {
             SetBrandID(0)
             setSeletedSubID([])
             if (product) {
-                console.log(product)
                 if (product.status === 201) {
                     setIsPressed(false);
                     notify("تم الاضافة بنجاح", "success");
