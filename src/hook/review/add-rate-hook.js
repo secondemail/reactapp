@@ -33,13 +33,17 @@ const AddRateHook = (id) => {
             notify("من فضلك اكتب تعليق", "error")
             return
         }
-        setLoading(true)
         setIsPressed(true)
-        await dispatch(createReview(id, {
-            review: rateText,
-            rating: rateValue
-        }))
-        setLoading(false)
+        if(localStorage.getItem("user") !== null){
+            setLoading(true)
+            await dispatch(createReview(id, {
+                review: rateText,
+                rating: rateValue
+            }))
+            setLoading(false)
+        }else{
+          window.location.href = "/login"
+        }
     }
 
     const res = useSelector(state => state.reviewReducer.createView)
