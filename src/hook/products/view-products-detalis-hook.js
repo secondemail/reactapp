@@ -19,6 +19,16 @@ const ViewProductsDetalisHook = (prodID) => {
             getDetails();
         } catch (error) {}
     }, [])
+        useEffect(() => {
+        try {
+            const getDetails = async () => {
+                setLoading(true)
+                await dispatch(getOneProduct(prodID))
+                setLoading(false);
+            }
+            getDetails();
+        } catch (error) {}
+    }, [prodID])
 
     const oneProducts = useSelector((state) => state.allproducts.oneProduct)
     const oneCategory = useSelector((state) => state.allCategory.oneCategory)
