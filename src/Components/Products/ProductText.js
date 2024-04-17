@@ -20,9 +20,14 @@ const ProductText = ({item,cat,brand}) => {
 
   const handelSubmit = async () => {
     setIsPressed(true);
-    setLoading(true);
-    await dispatch(addCart({ productId: id, color: prodColor }));
-    setLoading(false)
+    if(localStorage.getItem("user") !== null){
+          setLoading(true);
+          await dispatch(addCart({ productId: id, color: prodColor }));
+          setLoading(false)
+    }else{
+      window.location.href = "/login"
+    }
+
   }
 
   useEffect(() => {
