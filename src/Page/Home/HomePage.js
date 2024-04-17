@@ -13,7 +13,7 @@ const HomePage = () => {
             <Silder />
             <Fade>
                 <HomeCategory />
-                <CardProductsContainer products={items} title="الاكثر مبيعا" btntitle="المزيد" pathText="/products" />
+                <CardProductsContainer products={items} title="احدث المنتجات المضافه" btntitle="المزيد" pathText="/products" />
                 <DiscountSection />
                 <BrandFeatured title="اشهر الماركات" btntitle="المزيد" />
             </Fade>
