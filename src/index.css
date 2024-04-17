@@ -699,9 +699,9 @@ body {
 }
 
 /* ================================= */
-/*.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root{
+.MuiInputLabel-root{
   left: unset !important;
-}*/
+}
 .drop-down-menu_EMFQP{
   left: 75% !important;
 }
@@ -714,7 +714,7 @@ body {
     border-top: unset;
     filter: drop-shadow(2px 4px 6px black)
 }
-.css-10hburv-MuiTypography-root  {
+.MuiTypography-root  {
   font-family: "Almarai" !important;
 }
 .MuiButtonBase-root{
