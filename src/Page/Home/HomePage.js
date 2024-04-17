@@ -9,7 +9,7 @@ import { Fade } from 'react-awesome-reveal';
 const HomePage = () => {
     const [items] = ViewHomeProductsHook();
     return (
-        <div className='font' >
+        <div style={{ minHeight: '670px' }} className='font' >
             <Silder />
             <Fade>
                 <HomeCategory />
