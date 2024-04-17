@@ -16,7 +16,7 @@ const ShopProductsPage = () => {
     }
     return (
         <div style={{ minHeight: '670px' }}>
-            <Container>
+            <Container style={{ minHeight: '670px' }}>
                 <SearchCountResult onClick={getProduct} title={`هناك ${results} نتيجة بحث`} />
                 <Row className='d-flex flex-row'>
                     <Col lg="2" className='d-flex'>
