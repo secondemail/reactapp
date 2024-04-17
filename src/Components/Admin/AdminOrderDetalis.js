@@ -34,6 +34,7 @@ const AdminOrderDetalis = () => {
             if (resDeliver) {
                 if (resDeliver.status === 200) {
                     notify("تم التعديل بنجاح", "success")
+                    setIsPressedDeliver(false);
                 }
             }
         }
@@ -54,6 +55,7 @@ const AdminOrderDetalis = () => {
             if (resPay) {
                 if (resPay.status === 200) {
                     notify("تم التعديل بنجاح", "success")
+                    setIsPressedPay(false);
                 }
             }
         }
