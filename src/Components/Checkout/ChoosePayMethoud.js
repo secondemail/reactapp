@@ -149,6 +149,7 @@ const [method, setMehod] = useState("");
                     }, 1500);
                 } else {
                     notify("مشكلة في اضافة الطلب", "error");
+                    setPressOrder(false)
                 }
             }
         }
